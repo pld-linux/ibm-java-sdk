@@ -40,7 +40,7 @@ install -d $RPM_BUILD_ROOT%{_libdir}/%{java}/{bin,jre/bin/classic} \
 	$RPM_BUILD_ROOT%{_includedir}/jdk \
 	$RPM_BUILD_ROOT%{_bindir}
 
-ln -sf %{java} $RPM_BUILD_ROOT%{_libdir}/java-sdk 
+ln -sf %{java} $RPM_BUILD_ROOT%{_libdir}/java-sdk
 
 cp -a bin/exe $RPM_BUILD_ROOT%{_libdir}/%{java}/bin/
 cp -a jre/bin/exe $RPM_BUILD_ROOT%{_libdir}/%{java}/jre/bin/

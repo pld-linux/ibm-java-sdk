@@ -4,16 +4,17 @@
 %define __spec_install_post exit 0
 
 Summary:	IBM Java Software Developement Kit v1.3
+Summary(pl):	Java SDK produkcji IBM
 Name:		ibm-java-sdk
 Version:	1.3
-Release:	3
+Release:	4
 License:	Look into documentation
 Group:		Development/Languages/Java
 Group(de):	Entwicklung/Sprachen/Java
 Group(pl):	Programowanie/Jêzyki/Java
 Source0:	IBMJava2-SDK-13.tgz
-Source1:	ibm-java-sdk-wrapper.sh
-URL:		http://www.ibm.com/developer/java
+Source1:	%{name}-wrapper.sh
+URL:		http://www.ibm.com/developer/java/
 Provides:	jdk = %{version}
 Provides:	jre = %{version}
 Provides:	jar
@@ -32,8 +33,6 @@ Pakiet zawiera SDK Javy 1.3 firmy IBM.
 
 %prep
 %setup -q -n %{java}
-
-%build
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -90,8 +89,11 @@ rm -rf $RPM_BUILD_ROOT
 
 %{_includedir}/jdk/*.h
 
+%dir %{_libdir}/%{java}
+%dir %{_libdir}/%{java}/lib
 %{_libdir}/%{java}/lib/*
 
+%dir %{_libdir}/%{java}/bin
 %{_libdir}/%{java}/bin/appletviewer
 %{_libdir}/%{java}/bin/appletviewer_g
 %{_libdir}/%{java}/bin/extcheck
@@ -125,6 +127,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/%{java}/bin/serialver_g
 
 %attr(755,root,root) %{_libdir}/%{java}/bin/jwrapper
+%dir %{_libdir}/%{java}/bin/exe
 %attr(755,root,root) %{_libdir}/%{java}/bin/exe/*
 %attr(755,root,root) %{_bindir}/appletviewer
 %attr(755,root,root) %{_bindir}/appletviewer_g
@@ -158,6 +161,10 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/serialver
 %attr(755,root,root) %{_bindir}/serialver_g
 
+%dir %{_libdir}/%{java}/jre
+%dir %{_libdir}/%{java}/jre/bin
+%dir %{_libdir}/%{java}/jre/bin/exe
+%dir %{_libdir}/%{java}/jre/bin/classic
 %attr(755,root,root) %{_libdir}/%{java}/jre/bin/exe/*
 %attr(755,root,root) %{_libdir}/%{java}/jre/bin/classic/*
 %attr(755,root,root) %{_libdir}/%{java}/jre/bin/*.so
@@ -184,17 +191,19 @@ rm -rf $RPM_BUILD_ROOT
 #%attr(755,root,root) %{_libdir}/%{java}/jre/bin/java-rmi_g
 #%attr(755,root,root) %{_libdir}/%{java}/jre/bin/java_vm*
 
+%dir %{_libdir}/%{java}/jre/lib
 %{_libdir}/%{java}/jre/lib/*.properties*
 %{_libdir}/%{java}/jre/lib/*.jar
 %{_libdir}/%{java}/jre/bin/JavaPluginControlPanel
 %{_libdir}/%{java}/jre/lib/tzmappings
-%{_libdir}/%{java}/jre/lib/audio/*
-%{_libdir}/%{java}/jre/lib/cmm/*
-%{_libdir}/%{java}/jre/lib/ext/*
-%{_libdir}/%{java}/jre/lib/fonts/*
-%{_libdir}/%{java}/jre/lib/security/*
+%{_libdir}/%{java}/jre/lib/audio
+%{_libdir}/%{java}/jre/lib/cmm
+%{_libdir}/%{java}/jre/lib/ext
+%{_libdir}/%{java}/jre/lib/fonts
+%{_libdir}/%{java}/jre/lib/security
+%dir %{_libdir}/%{java}/jre/lib/images
 %{_libdir}/%{java}/jre/lib/images/*.gif
 %{_libdir}/%{java}/jre/lib/images/*.jpg
-%{_libdir}/%{java}/jre/lib/images/cursors/*
-%{_libdir}/%{java}/jre/lib/images/ftp/*
+%{_libdir}/%{java}/jre/lib/images/cursors
+%{_libdir}/%{java}/jre/lib/images/ftp
 #%dir %{_libdir}/%{java}/jre/lib/locale/*

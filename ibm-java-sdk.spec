@@ -22,7 +22,7 @@ Requires:	fileutils
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 
-%define 	javadir		%{_libdir}/java
+%define		javadir		%{_libdir}/java
 %define		jredir		%{_libdir}/java/jre
 %define		javasrcdir	%{_libdir}/java
 %define		javaincludedir	%{_libdir}/java/include

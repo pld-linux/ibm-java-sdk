@@ -8,8 +8,9 @@ Name:		ibm-java-sdk
 Version:	1.3
 Release:	3
 License:	Look into documentation
-Group:		Development/Languages
-Group(pl):	Programowanie/Jêzyki
+Group:		Development/Languages/Java
+Group(de):	Entwicklung/Sprachen/Java
+Group(pl):	Programowanie/Jêzyki/Java
 Source0:	IBMJava2-SDK-13.tgz
 Source1:	ibm-java-sdk-wrapper.sh
 URL:		http://www.ibm.com/developer/java

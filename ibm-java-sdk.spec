@@ -217,31 +217,30 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/serialver
 %attr(755,root,root) %{_bindir}/serialver_g
 
-%defattr(755,root,root)
-%{javadir}/bin/appletviewer
-%{javadir}/bin/appletviewer_g
-%{javadir}/bin/extcheck
-%{javadir}/bin/extcheck_g
-%{javadir}/bin/HtmlConverter
-%{javadir}/bin/idlj
-%{javadir}/bin/idlj_g
-%{javadir}/bin/jarsigner
-%{javadir}/bin/jarsigner_g
-%{javadir}/bin/javac
-%{javadir}/bin/javac_g
-%{javadir}/bin/javadoc
-%{javadir}/bin/javadoc_g
-%{javadir}/bin/javah
-%{javadir}/bin/javah_g
-%{javadir}/bin/javap
-%{javadir}/bin/javap_g
-%{javadir}/bin/java-rmi.cgi
-%{javadir}/bin/jdb
-%{javadir}/bin/jdb_g
-%{javadir}/bin/native2ascii
-%{javadir}/bin/native2ascii_g
-%{javadir}/bin/serialver
-%{javadir}/bin/serialver_g
+%attr(755,root,root) %{javadir}/bin/appletviewer
+%attr(755,root,root) %{javadir}/bin/appletviewer_g
+%attr(755,root,root) %{javadir}/bin/extcheck
+%attr(755,root,root) %{javadir}/bin/extcheck_g
+%attr(755,root,root) %{javadir}/bin/HtmlConverter
+%attr(755,root,root) %{javadir}/bin/idlj
+%attr(755,root,root) %{javadir}/bin/idlj_g
+%attr(755,root,root) %{javadir}/bin/jarsigner
+%attr(755,root,root) %{javadir}/bin/jarsigner_g
+%attr(755,root,root) %{javadir}/bin/javac
+%attr(755,root,root) %{javadir}/bin/javac_g
+%attr(755,root,root) %{javadir}/bin/javadoc
+%attr(755,root,root) %{javadir}/bin/javadoc_g
+%attr(755,root,root) %{javadir}/bin/javah
+%attr(755,root,root) %{javadir}/bin/javah_g
+%attr(755,root,root) %{javadir}/bin/javap
+%attr(755,root,root) %{javadir}/bin/javap_g
+%attr(755,root,root) %{javadir}/bin/java-rmi.cgi
+%attr(755,root,root) %{javadir}/bin/jdb
+%attr(755,root,root) %{javadir}/bin/jdb_g
+%attr(755,root,root) %{javadir}/bin/native2ascii
+%attr(755,root,root) %{javadir}/bin/native2ascii_g
+%attr(755,root,root) %{javadir}/bin/serialver
+%attr(755,root,root) %{javadir}/bin/serialver_g
 
 
 
@@ -260,71 +259,70 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{jredir}/bin
 %dir %{jredir}/bin/classic
 
-%defattr(755,root,root)
-%{jredir}/bin/classic/*
-%{jredir}/bin/*.properties
-%{jredir}/bin/libawt_g.so
-%{jredir}/bin/libawt.so
-%{jredir}/bin/libcmm_g.so
-%{jredir}/bin/libcmm.so
-%{jredir}/bin/libdcpr_g.so
-%{jredir}/bin/libdcpr.so
-%{jredir}/bin/libdt_socket_g.so
-%{jredir}/bin/libdt_socket.so
-%{jredir}/bin/libfontmanager_g.so
-%{jredir}/bin/libfontmanager.so
-%{jredir}/bin/libhpi_g.so
-%{jredir}/bin/libhpi.so
-%{jredir}/bin/libhprof_g.so
-%{jredir}/bin/libhprof.so
-%{jredir}/bin/libjaas_g.so
-%{jredir}/bin/libjaas.so
-%{jredir}/bin/libjava_g.so
-%{jredir}/bin/libjavaplugin_jni_g.so
-%{jredir}/bin/libjavaplugin_jni.so
-%{jredir}/bin/libjava.so
-%{jredir}/bin/libjawt_g.so
-%{jredir}/bin/libjawt.so
-%{jredir}/bin/libjdwp_g.so
-%{jredir}/bin/libjdwp.so
-%{jredir}/bin/libjitc_g.so
-%{jredir}/bin/libjitc.so
-%{jredir}/bin/libjpeg_g.so
-%{jredir}/bin/libjpeg.so
-%{jredir}/bin/libjsound_g.so
-%{jredir}/bin/libjsound.so
-%{jredir}/bin/libnet_g.so
-%{jredir}/bin/libnet.so
-%{jredir}/bin/libnio_g.so
-%{jredir}/bin/libnio.so
-%{jredir}/bin/liborb_g.so
-%{jredir}/bin/liborb.so
-%{jredir}/bin/librmi_g.so
-%{jredir}/bin/librmi.so
-%{jredir}/bin/libxhpi_g.so
-%{jredir}/bin/libxhpi.so
-%{jredir}/bin/libzip_g.so
-%{jredir}/bin/libzip.so
-%{jredir}/bin/awt_robot
-%{jredir}/bin/awt_robot_g
-%{jredir}/bin/java
-%{jredir}/bin/java_g
-%{jredir}/bin/JavaPluginControlPanel
-%{jredir}/bin/javaw
-%{jredir}/bin/javaw_g
-%{jredir}/bin/jvmdcf
-%{jredir}/bin/jvmdcf_g
-%{jredir}/bin/jvmtcf
-%{jredir}/bin/jvmtcf_g
-%{jredir}/bin/keytool
-%{jredir}/bin/keytool_g
-%{jredir}/bin/policytool
-%{jredir}/bin/policytool_g
-%{jredir}/bin/rmid
-%{jredir}/bin/rmid_g
-%{jredir}/bin/tnameserv
-%{jredir}/bin/tnameserv_g
-%{jredir}/bin/webstart_install.sh
+%attr(755,root,root) %{jredir}/bin/classic/*
+%attr(755,root,root) %{jredir}/bin/*.properties
+%attr(755,root,root) %{jredir}/bin/libawt_g.so
+%attr(755,root,root) %{jredir}/bin/libawt.so
+%attr(755,root,root) %{jredir}/bin/libcmm_g.so
+%attr(755,root,root) %{jredir}/bin/libcmm.so
+%attr(755,root,root) %{jredir}/bin/libdcpr_g.so
+%attr(755,root,root) %{jredir}/bin/libdcpr.so
+%attr(755,root,root) %{jredir}/bin/libdt_socket_g.so
+%attr(755,root,root) %{jredir}/bin/libdt_socket.so
+%attr(755,root,root) %{jredir}/bin/libfontmanager_g.so
+%attr(755,root,root) %{jredir}/bin/libfontmanager.so
+%attr(755,root,root) %{jredir}/bin/libhpi_g.so
+%attr(755,root,root) %{jredir}/bin/libhpi.so
+%attr(755,root,root) %{jredir}/bin/libhprof_g.so
+%attr(755,root,root) %{jredir}/bin/libhprof.so
+%attr(755,root,root) %{jredir}/bin/libjaas_g.so
+%attr(755,root,root) %{jredir}/bin/libjaas.so
+%attr(755,root,root) %{jredir}/bin/libjava_g.so
+%attr(755,root,root) %{jredir}/bin/libjavaplugin_jni_g.so
+%attr(755,root,root) %{jredir}/bin/libjavaplugin_jni.so
+%attr(755,root,root) %{jredir}/bin/libjava.so
+%attr(755,root,root) %{jredir}/bin/libjawt_g.so
+%attr(755,root,root) %{jredir}/bin/libjawt.so
+%attr(755,root,root) %{jredir}/bin/libjdwp_g.so
+%attr(755,root,root) %{jredir}/bin/libjdwp.so
+%attr(755,root,root) %{jredir}/bin/libjitc_g.so
+%attr(755,root,root) %{jredir}/bin/libjitc.so
+%attr(755,root,root) %{jredir}/bin/libjpeg_g.so
+%attr(755,root,root) %{jredir}/bin/libjpeg.so
+%attr(755,root,root) %{jredir}/bin/libjsound_g.so
+%attr(755,root,root) %{jredir}/bin/libjsound.so
+%attr(755,root,root) %{jredir}/bin/libnet_g.so
+%attr(755,root,root) %{jredir}/bin/libnet.so
+%attr(755,root,root) %{jredir}/bin/libnio_g.so
+%attr(755,root,root) %{jredir}/bin/libnio.so
+%attr(755,root,root) %{jredir}/bin/liborb_g.so
+%attr(755,root,root) %{jredir}/bin/liborb.so
+%attr(755,root,root) %{jredir}/bin/librmi_g.so
+%attr(755,root,root) %{jredir}/bin/librmi.so
+%attr(755,root,root) %{jredir}/bin/libxhpi_g.so
+%attr(755,root,root) %{jredir}/bin/libxhpi.so
+%attr(755,root,root) %{jredir}/bin/libzip_g.so
+%attr(755,root,root) %{jredir}/bin/libzip.so
+%attr(755,root,root) %{jredir}/bin/awt_robot
+%attr(755,root,root) %{jredir}/bin/awt_robot_g
+%attr(755,root,root) %{jredir}/bin/java
+%attr(755,root,root) %{jredir}/bin/java_g
+%attr(755,root,root) %{jredir}/bin/JavaPluginControlPanel
+%attr(755,root,root) %{jredir}/bin/javaw
+%attr(755,root,root) %{jredir}/bin/javaw_g
+%attr(755,root,root) %{jredir}/bin/jvmdcf
+%attr(755,root,root) %{jredir}/bin/jvmdcf_g
+%attr(755,root,root) %{jredir}/bin/jvmtcf
+%attr(755,root,root) %{jredir}/bin/jvmtcf_g
+%attr(755,root,root) %{jredir}/bin/keytool
+%attr(755,root,root) %{jredir}/bin/keytool_g
+%attr(755,root,root) %{jredir}/bin/policytool
+%attr(755,root,root) %{jredir}/bin/policytool_g
+%attr(755,root,root) %{jredir}/bin/rmid
+%attr(755,root,root) %{jredir}/bin/rmid_g
+%attr(755,root,root) %{jredir}/bin/tnameserv
+%attr(755,root,root) %{jredir}/bin/tnameserv_g
+%attr(755,root,root) %{jredir}/bin/webstart_install.sh
 
 
 %attr(755,root,root) %{_bindir}/java
@@ -343,21 +341,20 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/tnameserv_g
 
 %dir %{javadir}/bin
-%defattr(755,root,root)
-%{javadir}/bin/java
-%{javadir}/bin/java_g
-%{javadir}/bin/javaw
-%{javadir}/bin/javaw_g
-%{javadir}/bin/jvmtcf
-%{javadir}/bin/jvmtcf_g
-%{javadir}/bin/keytool
-%{javadir}/bin/keytool_g
-%{javadir}/bin/policytool
-%{javadir}/bin/policytool_g
-%{javadir}/bin/rmid
-%{javadir}/bin/rmid_g
-%{javadir}/bin/tnameserv
-%{javadir}/bin/tnameserv_g
+%attr(755,root,root) %{javadir}/bin/java
+%attr(755,root,root) %{javadir}/bin/java_g
+%attr(755,root,root) %{javadir}/bin/javaw
+%attr(755,root,root) %{javadir}/bin/javaw_g
+%attr(755,root,root) %{javadir}/bin/jvmtcf
+%attr(755,root,root) %{javadir}/bin/jvmtcf_g
+%attr(755,root,root) %{javadir}/bin/keytool
+%attr(755,root,root) %{javadir}/bin/keytool_g
+%attr(755,root,root) %{javadir}/bin/policytool
+%attr(755,root,root) %{javadir}/bin/policytool_g
+%attr(755,root,root) %{javadir}/bin/rmid
+%attr(755,root,root) %{javadir}/bin/rmid_g
+%attr(755,root,root) %{javadir}/bin/tnameserv
+%attr(755,root,root) %{javadir}/bin/tnameserv_g
 
 
 %files -n %{name}-demos
@@ -370,23 +367,23 @@ rm -rf $RPM_BUILD_ROOT
 %{javadir}/src.jar
 
 %files -n ibm-java-tools
-%defattr(755,root,root)
-%{javadir}/bin/jar
-%{javadir}/bin/jar_g
-%{_bindir}/jar
-%{_bindir}/jar_g
+%defattr(644,root,root,755)
+%attr(755,root,root) %{javadir}/bin/jar
+%attr(755,root,root) %{javadir}/bin/jar_g
+%attr(755,root,root) %{_bindir}/jar
+%attr(755,root,root) %{_bindir}/jar_g
 
-%{javadir}/bin/rmiregistry
-%{javadir}/bin/rmiregistry_g
-%{_bindir}/rmiregistry
-%{_bindir}/rmiregistry_g
-%{jredir}/bin/rmiregistry
-%{jredir}/bin/rmiregistry_g
+%attr(755,root,root) %{javadir}/bin/rmiregistry
+%attr(755,root,root) %{javadir}/bin/rmiregistry_g
+%attr(755,root,root) %{_bindir}/rmiregistry
+%attr(755,root,root) %{_bindir}/rmiregistry_g
+%attr(755,root,root) %{jredir}/bin/rmiregistry
+%attr(755,root,root) %{jredir}/bin/rmiregistry_g
 
-%{javadir}/bin/rmic
-%{javadir}/bin/rmic_g
-%{_bindir}/rmic
-%{_bindir}/rmic_g
+%attr(755,root,root) %{javadir}/bin/rmic
+%attr(755,root,root) %{javadir}/bin/rmic_g
+%attr(755,root,root) %{_bindir}/rmic
+%attr(755,root,root) %{_bindir}/rmic_g
 
 %files -n netscape4-plugin-java-ibm
 %defattr(644,root,root,755)

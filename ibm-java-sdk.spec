@@ -78,6 +78,8 @@ rm -rf $RPM_BUILD_ROOT
 %doc docs/* javasrc.jar jre/bin/classic/Xusage.txt.gz
 %doc jre/lib/jvm.hprof.txt.gz
 
+%{_libdir}/java-sdk
+
 %{_includedir}/jdk/*.h
 
 %{_libdir}/%{java}/lib/*

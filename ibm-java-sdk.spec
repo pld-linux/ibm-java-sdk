@@ -72,16 +72,13 @@ install jre/bin/jvmtcf* $RPM_BUILD_ROOT%{_libdir}/%{java}/jre/bin
 install include/* $RPM_BUILD_ROOT%{_includedir}/jdk
 install jre/bin/classic/*.so $RPM_BUILD_ROOT%{_libdir}/%{java}/jre/bin/classic/
 
-gzip -9nf docs/COPYRIGHT jre/bin/classic/Xusage.txt \
-	jre/lib/jvm.hprof.txt
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc docs/* javasrc.jar jre/bin/classic/Xusage.txt.gz
-%doc jre/lib/jvm.hprof.txt.gz
+%doc docs/* javasrc.jar jre/bin/classic/Xusage.txt
+%doc jre/lib/jvm.hprof.txt
 
 %{_libdir}/java-sdk
 

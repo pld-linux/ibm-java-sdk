@@ -3,7 +3,7 @@
 
 %define __spec_install_post exit 0
 
-Summary:	IBM Java Software Developement Kit v1.3
+Summary:	IBM Java Software Development Kit v1.3
 Summary(pl):	Java SDK produkcji IBM
 Name:		ibm-java-sdk
 Version:	1.3

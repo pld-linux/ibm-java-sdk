@@ -11,6 +11,7 @@ Release:	0.1
 License:	Look into documentation
 Group:		Development/Languages/Java
 URL:		http://www.ibm.com/developer/java/
+# http://www-106.ibm.com/developerworks/java/jdk/linux140/devkit-info.html
 Source0:	IBMJava2-SDK-14.tgz
 Provides:	jdk = %{version}
 Obsoletes:	jdk
@@ -191,7 +192,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %{javaincludedir}/*.h
 
-%defattr(755,root,root)
 %attr(755,root,root) %{_bindir}/appletviewer
 %attr(755,root,root) %{_bindir}/appletviewer_g
 %attr(755,root,root) %{_bindir}/extcheck
@@ -217,6 +217,7 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/serialver
 %attr(755,root,root) %{_bindir}/serialver_g
 
+%defattr(755,root,root)
 %{javadir}/bin/appletviewer
 %{javadir}/bin/appletviewer_g
 %{javadir}/bin/extcheck
@@ -326,7 +327,6 @@ rm -rf $RPM_BUILD_ROOT
 %{jredir}/bin/webstart_install.sh
 
 
-%defattr(755,root,root)
 %attr(755,root,root) %{_bindir}/java
 %attr(755,root,root) %{_bindir}/java_g
 %attr(755,root,root) %{_bindir}/javaw
@@ -343,6 +343,7 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/tnameserv_g
 
 %dir %{javadir}/bin
+%defattr(755,root,root)
 %{javadir}/bin/java
 %{javadir}/bin/java_g
 %{javadir}/bin/javaw
@@ -369,23 +370,23 @@ rm -rf $RPM_BUILD_ROOT
 %{javadir}/src.jar
 
 %files -n ibm-java-tools
-%defattr(644,root,root,755)
+%defattr(755,root,root)
 %{javadir}/bin/jar
 %{javadir}/bin/jar_g
-%attr(755,root,root) %{_bindir}/jar
-%attr(755,root,root) %{_bindir}/jar_g
+%{_bindir}/jar
+%{_bindir}/jar_g
 
 %{javadir}/bin/rmiregistry
 %{javadir}/bin/rmiregistry_g
-%attr(755,root,root) %{_bindir}/rmiregistry
-%attr(755,root,root) %{_bindir}/rmiregistry_g
+%{_bindir}/rmiregistry
+%{_bindir}/rmiregistry_g
 %{jredir}/bin/rmiregistry
 %{jredir}/bin/rmiregistry_g
 
 %{javadir}/bin/rmic
 %{javadir}/bin/rmic_g
-%attr(755,root,root) %{_bindir}/rmic
-%attr(755,root,root) %{_bindir}/rmic_g
+%{_bindir}/rmic
+%{_bindir}/rmic_g
 
 %files -n netscape4-plugin-java-ibm
 %defattr(644,root,root,755)

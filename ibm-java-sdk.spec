@@ -1,7 +1,7 @@
 
-%define java	IBMJava2-14
+%define	java			IBMJava2-14
 
-%define __spec_install_post exit 0
+%define	__spec_install_post	exit 0
 
 Summary:	IBM Java Software Development Kit v1.4
 Summary(pl):	Java SDK produkcji IBM
@@ -22,13 +22,13 @@ Requires:	fileutils
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 
-%define         javadir         %{_libdir}/java
-%define         jredir          %{_libdir}/java/jre
-%define         javasrcdir      %{_libdir}/java
-%define         javaincludedir      %{_libdir}/java/include
-%define         classdir        %{_datadir}/java
-%define         netscape4dir    /usr/%{_lib}/netscape
-%define         mozilladir      /usr/%{_lib}/mozilla
+%define 	javadir		%{_libdir}/java
+%define		jredir		%{_libdir}/java/jre
+%define		javasrcdir	%{_libdir}/java
+%define		javaincludedir	%{_libdir}/java/include
+%define		classdir	%{_datadir}/java
+%define		netscape4dir	/usr/%{_lib}/netscape
+%define		mozilladir	/usr/%{_lib}/mozilla
 
 %description
 This is IBM's Java 1.4 SDK.

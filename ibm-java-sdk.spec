@@ -6,15 +6,15 @@
 Summary:	IBM Java Software Developement Kit v1.3
 Name:		ibm-java-sdk
 Version:	1.3
-Release:	2
+Release:	3
 License:	Look into documentation
 Group:		Development/Languages
 Group(pl):	Programowanie/Jêzyki
 Source0:	IBMJava2-SDK-13.tgz
 Source1:	ibm-java-sdk-wrapper.sh
 URL:		http://www.ibm.com/developer/java
-Provides:	java1.3sdk
-Provides:	java1.3
+Provides:	jdk = %{version}
+Provides:	jre = %{version}
 Provides:	jar
 Conflicts:	kaffe
 ExclusiveArch:	%{ix86}

@@ -27,8 +27,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define         javasrcdir      %{_libdir}/java
 %define         javaincludedir      %{_libdir}/java/include
 %define         classdir        %{_datadir}/java
-%define         netscape4dir    /usr/lib/netscape
-%define         mozilladir      /usr/lib/mozilla
+%define         netscape4dir    /usr/%{_lib}/netscape
+%define         mozilladir      /usr/%{_lib}/mozilla
 
 %description
 This is IBM's Java 1.4 SDK.

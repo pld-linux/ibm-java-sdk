@@ -14,10 +14,12 @@ Source0:	IBMJava2-SDK-13.tgz
 Source1:	ibm-java-sdk-wrapper.sh
 URL:		http://www.ibm.com/developer/java
 Provides:	java1.3sdk
+Provides:	java
+Provides:	jar
 ExclusiveArch:	%{ix86}
 BuildRequires:	file
-Requires:	/usr/bin/which
-Requires:	/bin/ls
+Requires:	which
+Requires:	fileutils
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description

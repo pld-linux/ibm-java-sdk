@@ -14,7 +14,7 @@ Source0:	IBMJava2-SDK-13.tgz
 Source1:	ibm-java-sdk-wrapper.sh
 URL:		http://www.ibm.com/developer/java
 Provides:	java1.3sdk
-Provides:	java
+Provides:	java1.3
 Provides:	jar
 ExclusiveArch:	%{ix86}
 BuildRequires:	file

@@ -16,6 +16,8 @@ URL:		http://www.ibm.com/developer/java
 Provides:	java1.3
 ExclusiveArch:	%{ix86}
 BuildRequires:	file
+Requires:	/usr/bin/which
+Requires:	/bin/ls
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description

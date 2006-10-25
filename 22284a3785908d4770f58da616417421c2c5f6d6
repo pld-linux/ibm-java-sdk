@@ -1,0 +1,9 @@
+- uh, does ibm changed .tgz so much?
+- commented out: java_vm, java-rmi{,_g}, jre/lib/locale -- looks like
+  they don't exist any more
+- +conflicts: kaffe
+- changed link to java-sdk
+- added link for bin/java
+- JavaPluginControlPanel is under jre/bin now
+- %files in .spec are sorted
+- release: 2

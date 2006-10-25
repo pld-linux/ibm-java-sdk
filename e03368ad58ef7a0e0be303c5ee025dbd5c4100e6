@@ -1,0 +1,2 @@
+- changed Provides: java1.3sdk to jdk = %version
+- changed Provides: java1.3 to jre = %version

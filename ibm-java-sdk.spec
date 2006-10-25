@@ -13,12 +13,12 @@ Group:		Development/Languages/Java
 URL:		http://www.ibm.com/developer/java/
 # http://www-106.ibm.com/developerworks/java/jdk/linux140/devkit-info.html
 Source0:	IBMJava2-SDK-14.tgz
+BuildRequires:	file
+Requires:	fileutils
+Requires:	ibm-java-jre = %{version}
 Provides:	jdk = %{version}
 Obsoletes:	jdk
 ExclusiveArch:	%{ix86}
-BuildRequires:	file
-Requires:	ibm-java-jre = %{version}
-Requires:	fileutils
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 
@@ -41,10 +41,10 @@ Pakiet zawiera SDK Javy 1.4 firmy IBM.
 Summary:	IBM JRE (Java Runtime Environment) for Linux
 Summary(pl):	IBM JRE - ¶rodowisko uruchomieniowe Javy dla Linuksa
 Group:		Development/Languages/Java
+Requires:	java-shared
+Provides:	java
 Provides:	java1.4
 Provides:	jre = %{version}
-Provides:	java
-Requires:	java-shared
 Obsoletes:	java
 Obsoletes:	jre
 
@@ -59,7 +59,7 @@ Java Runtime Environment for Linux.
 Summary:	IBM's JDK demonstration programs
 Summary(pl):	Programy demonstracyjne do JDK firmy IBM
 Group:		Development/Languages/Java
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description demos
 JDK demonstration programs.
@@ -72,7 +72,7 @@ Programy demonstracyjne do JDK.
 Summary:	IBM's JDK source code
 Summary(pl):	Programy demonstracyjne do JDK firmy IBM
 Group:		Development/Languages/Java
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description src
 JDK source code.
@@ -87,9 +87,9 @@ Summary(pl):	Wspó³dzielone narzêdzia javy firmy IBM
 Group:		Development/Languages/Java
 Provides:	jar
 Provides:	java-shared
-Obsoletes:	java-shared
-Obsoletes:	jar
 Obsoletes:	fastjar
+Obsoletes:	jar
+Obsoletes:	java-shared
 
 %description -n ibm-java-tools
 This package contains tools that are common for every Java(tm)
@@ -107,9 +107,9 @@ Group:		Development/Languages/Java
 Requires:	ibm-java-jre = %{version}
 Requires:	netscape-common >= 4.0
 Obsoletes:	blackdown-java-sdk-netscape4-plugin
-Obsoletes:	netscape4-plugin-java-blackdown
 Obsoletes:	java-sun-nn4-plugin
 Obsoletes:	jre-netscape4-plugin
+Obsoletes:	netscape4-plugin-java-blackdown
 
 %description -n netscape4-plugin-java-ibm
 Java plugin for Netscape 4.x.
@@ -122,7 +122,7 @@ Summary:	Mozilla Java plugin (by IBM)
 Summary(pl):	Wtyczka Javy do Mozilli (firmy IBM)
 Group:		Development/Languages/Java
 Requires:	jre = %{version}
-Prereq:		mozilla-embedded
+Requires:	mozilla-embedded
 Obsoletes:	blackdown-java-sdk-mozilla-plugin
 Obsoletes:	java-sun-moz-plugin
 Obsoletes:	jre-mozilla-plugin

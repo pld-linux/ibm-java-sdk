@@ -4,7 +4,7 @@
 %define	__spec_install_post	exit 0
 
 Summary:	IBM Java Software Development Kit v1.4
-Summary(pl):	Java SDK produkcji IBM
+Summary(pl.UTF-8):   Java SDK produkcji IBM
 Name:		ibm-java-sdk
 Version:	1.4
 Release:	0.1
@@ -33,13 +33,13 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 This is IBM's Java 1.4 SDK.
 
-%description -l pl
+%description -l pl.UTF-8
 Pakiet zawiera SDK Javy 1.4 firmy IBM.
 
 
 %package -n ibm-java-jre
 Summary:	IBM JRE (Java Runtime Environment) for Linux
-Summary(pl):	IBM JRE - ¶rodowisko uruchomieniowe Javy dla Linuksa
+Summary(pl.UTF-8):   IBM JRE - Å›rodowisko uruchomieniowe Javy dla Linuksa
 Group:		Development/Languages/Java
 Requires:	java-shared
 Provides:	java
@@ -51,39 +51,39 @@ Obsoletes:	jre
 %description -n ibm-java-jre
 Java Runtime Environment for Linux.
 
-%description -n ibm-java-jre -l pl
-¦rodowisko uruchomieniowe Javy dla Linuksa.
+%description -n ibm-java-jre -l pl.UTF-8
+Åšrodowisko uruchomieniowe Javy dla Linuksa.
 
 
 %package demos
 Summary:	IBM's JDK demonstration programs
-Summary(pl):	Programy demonstracyjne do JDK firmy IBM
+Summary(pl.UTF-8):   Programy demonstracyjne do JDK firmy IBM
 Group:		Development/Languages/Java
 Requires:	%{name} = %{version}-%{release}
 
 %description demos
 JDK demonstration programs.
 
-%description demos -l pl
+%description demos -l pl.UTF-8
 Programy demonstracyjne do JDK.
 
 
 %package src
 Summary:	IBM's JDK source code
-Summary(pl):	Programy demonstracyjne do JDK firmy IBM
+Summary(pl.UTF-8):   Programy demonstracyjne do JDK firmy IBM
 Group:		Development/Languages/Java
 Requires:	%{name} = %{version}-%{release}
 
 %description src
 JDK source code.
 
-%description src -l pl
-Kod ¼ród³owy do JDK.
+%description src -l pl.UTF-8
+Kod ÅºrÃ³dÅ‚owy do JDK.
 
 
 %package -n ibm-java-tools
 Summary:	Shared java tools by IBM
-Summary(pl):	Wspó³dzielone narzêdzia javy firmy IBM
+Summary(pl.UTF-8):   WspÃ³Å‚dzielone narzÄ™dzia javy firmy IBM
 Group:		Development/Languages/Java
 Provides:	jar
 Provides:	java-shared
@@ -95,14 +95,14 @@ Obsoletes:	java-shared
 This package contains tools that are common for every Java(tm)
 implementation, such as rmic or jar.
 
-%description -n ibm-java-tools -l pl
-Pakiet ten zawiera narzêdzia wspólne dla ka¿dej implementacji
+%description -n ibm-java-tools -l pl.UTF-8
+Pakiet ten zawiera narzÄ™dzia wspÃ³lne dla kaÅ¼dej implementacji
 Javy(tm), takie jak rmic czy jar.
 
 
 %package -n netscape4-plugin-java-ibm
 Summary:	Netscape 4.x Java plugin (by IBM)
-Summary(pl):	Wtyczka Javy do Netscape 4.x (firmy IBM)
+Summary(pl.UTF-8):   Wtyczka Javy do Netscape 4.x (firmy IBM)
 Group:		Development/Languages/Java
 Requires:	ibm-java-jre = %{version}
 Requires:	netscape-common >= 4.0
@@ -114,12 +114,12 @@ Obsoletes:	netscape4-plugin-java-blackdown
 %description -n netscape4-plugin-java-ibm
 Java plugin for Netscape 4.x.
 
-%description -n netscape4-plugin-java-ibm -l pl
-Wtyczka z obs³ug± Javy dla Netscape 4.x.
+%description -n netscape4-plugin-java-ibm -l pl.UTF-8
+Wtyczka z obsÅ‚ugÄ… Javy dla Netscape 4.x.
 
 %package -n mozilla-plugin-java-ibm
 Summary:	Mozilla Java plugin (by IBM)
-Summary(pl):	Wtyczka Javy do Mozilli (firmy IBM)
+Summary(pl.UTF-8):   Wtyczka Javy do Mozilli (firmy IBM)
 Group:		Development/Languages/Java
 Requires:	jre = %{version}
 Requires:	mozilla-embedded
@@ -132,8 +132,8 @@ Obsoletes:	mozilla-plugin-java-blackdown
 %description -n mozilla-plugin-java-ibm
 Java plugin for Mozilla.
 
-%description -n mozilla-plugin-java-ibm -l pl
-Wtyczka z obs³ug± Javy dla Mozilli.
+%description -n mozilla-plugin-java-ibm -l pl.UTF-8
+Wtyczka z obsÅ‚ugÄ… Javy dla Mozilli.
 
 %prep
 %setup -q -n %{java}

@@ -4,7 +4,7 @@
 %define	__spec_install_post	exit 0
 
 Summary:	IBM Java Software Development Kit v1.4
-Summary(pl.UTF-8):   Java SDK produkcji IBM
+Summary(pl.UTF-8):	Java SDK produkcji IBM
 Name:		ibm-java-sdk
 Version:	1.4
 Release:	0.1
@@ -39,7 +39,7 @@ Pakiet zawiera SDK Javy 1.4 firmy IBM.
 
 %package -n ibm-java-jre
 Summary:	IBM JRE (Java Runtime Environment) for Linux
-Summary(pl.UTF-8):   IBM JRE - środowisko uruchomieniowe Javy dla Linuksa
+Summary(pl.UTF-8):	IBM JRE - środowisko uruchomieniowe Javy dla Linuksa
 Group:		Development/Languages/Java
 Requires:	java-shared
 Provides:	java
@@ -57,7 +57,7 @@ Java Runtime Environment for Linux.
 
 %package demos
 Summary:	IBM's JDK demonstration programs
-Summary(pl.UTF-8):   Programy demonstracyjne do JDK firmy IBM
+Summary(pl.UTF-8):	Programy demonstracyjne do JDK firmy IBM
 Group:		Development/Languages/Java
 Requires:	%{name} = %{version}-%{release}
 
@@ -70,7 +70,7 @@ Programy demonstracyjne do JDK.
 
 %package src
 Summary:	IBM's JDK source code
-Summary(pl.UTF-8):   Programy demonstracyjne do JDK firmy IBM
+Summary(pl.UTF-8):	Programy demonstracyjne do JDK firmy IBM
 Group:		Development/Languages/Java
 Requires:	%{name} = %{version}-%{release}
 
@@ -83,7 +83,7 @@ Kod źródłowy do JDK.
 
 %package -n ibm-java-tools
 Summary:	Shared java tools by IBM
-Summary(pl.UTF-8):   Współdzielone narzędzia javy firmy IBM
+Summary(pl.UTF-8):	Współdzielone narzędzia javy firmy IBM
 Group:		Development/Languages/Java
 Provides:	jar
 Provides:	java-shared
@@ -102,7 +102,7 @@ Javy(tm), takie jak rmic czy jar.
 
 %package -n netscape4-plugin-java-ibm
 Summary:	Netscape 4.x Java plugin (by IBM)
-Summary(pl.UTF-8):   Wtyczka Javy do Netscape 4.x (firmy IBM)
+Summary(pl.UTF-8):	Wtyczka Javy do Netscape 4.x (firmy IBM)
 Group:		Development/Languages/Java
 Requires:	ibm-java-jre = %{version}
 Requires:	netscape-common >= 4.0
@@ -119,7 +119,7 @@ Wtyczka z obsługą Javy dla Netscape 4.x.
 
 %package -n mozilla-plugin-java-ibm
 Summary:	Mozilla Java plugin (by IBM)
-Summary(pl.UTF-8):   Wtyczka Javy do Mozilli (firmy IBM)
+Summary(pl.UTF-8):	Wtyczka Javy do Mozilli (firmy IBM)
 Group:		Development/Languages/Java
 Requires:	jre = %{version}
 Requires:	mozilla-embedded

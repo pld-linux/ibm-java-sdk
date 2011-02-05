@@ -357,12 +357,12 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{javadir}/bin/tnameserv_g
 
 
-%files -n %{name}-demos
+%files demos
 %defattr(644,root,root,755)
 %dir %{javadir}/demo
 %{javadir}/demo/*
 
-%files -n %{name}-src
+%files src
 %defattr(644,root,root,755)
 %{javadir}/src.jar
 
